@@ -10,9 +10,10 @@ local var10 = loadstring(game:HttpGet("https://raw.githubusercontent.com/samuraa
 _G.KeyValid = true  -- Force key to always be valid
 _G.L = "https://go.linkify.ru/1yuI"
 
-for key, val in ipairs(game:GetService("CoreGui"):GetChildren()) do
-	table.insert({}, val)
-end
+-- Removed the broken table.insert line since it doesn't do anything
+-- for key, val in ipairs(game:GetService("CoreGui"):GetChildren()) do
+--     table.insert({}, val) -- <-- This line was invalid
+-- end
 
 var10:Init({
 	["GuiParent"] = game:GetService("CoreGui"),
